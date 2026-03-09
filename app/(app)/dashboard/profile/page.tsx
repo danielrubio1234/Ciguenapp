@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { supabase } from "@/lib/supabase";
+import { signOut } from "next-auth/react";
 
 // --- Animation variants ---
 
@@ -53,8 +53,7 @@ export default function ProfilePage() {
   const handleSignOut = async () => {
     setIsSigningOut(true);
     try {
-      await supabase.auth.signOut();
-      router.push("/login");
+      await signOut({ callbackUrl: "/login" });
     } catch {
       toast.error("Error al cerrar sesion. Intenta de nuevo.");
       setIsSigningOut(false);

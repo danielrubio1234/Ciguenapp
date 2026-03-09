@@ -1,20 +1,18 @@
 import NextAuth from "next-auth";
-import { PgAdapter } from "@auth/pg-adapter";
+import PostgresAdapter from "@auth/pg-adapter";
 import { Pool } from "@neondatabase/serverless";
-import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import { sql } from "@/lib/db";
+import { authConfig } from "./auth.config";
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  adapter: PgAdapter(pool),
+  ...authConfig,
+  adapter: PostgresAdapter(pool),
   providers: [
-    Google({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    }),
+    // Override Credentials with the full authorize logic (has DB access)
     Credentials({
       credentials: {
         email: { label: "Email", type: "email" },
@@ -43,20 +41,4 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
     }),
   ],
-  session: { strategy: "jwt" },
-  pages: {
-    signIn: "/login",
-  },
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) token.id = user.id;
-      return token;
-    },
-    async session({ session, token }) {
-      if (token && session.user) {
-        session.user.id = token.id as string;
-      }
-      return session;
-    },
-  },
 });
