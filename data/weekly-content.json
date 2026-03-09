@@ -1,0 +1,119 @@
+[
+  {
+    "week": 8,
+    "type": "pregnancy",
+    "title": "Semana 8: El corazón de tu bebé ya late",
+    "body": "En la semana 8, el corazón de tu bebé ya late con un ritmo regular. Tu pequeño mide aproximadamente 1.6 cm, del tamaño de un frijol. Los dedos de las manos y los pies comienzan a formarse, y los párpados empiezan a cubrir los ojos.",
+    "normal_symptoms": ["Náuseas matutinas", "Cansancio extremo", "Sensibilidad en los senos", "Cambios de humor"],
+    "alert_signs": ["Sangrado vaginal abundante", "Dolor abdominal intenso tipo cólico", "Fiebre mayor a 38°C"],
+    "tip": "Come galletas de soda antes de levantarte para aliviar las náuseas matutinas."
+  },
+  {
+    "week": 12,
+    "type": "pregnancy",
+    "title": "Semana 12: Fin del primer trimestre",
+    "body": "¡Felicitaciones! Estás terminando el primer trimestre. Tu bebé ya tiene todos los órganos formados y ahora empezarán a madurar. Mide unos 6 cm y puede abrir y cerrar los puños. Las náuseas probablemente empezarán a disminuir pronto.",
+    "normal_symptoms": ["Menos náuseas", "Más energía", "Ligero aumento de peso", "La pancita empieza a notarse"],
+    "alert_signs": ["Sangrado vaginal", "Dolor pélvico severo", "Mareos intensos con desmayos"],
+    "tip": "Este es un buen momento para empezar a usar crema hidratante en el abdomen para prevenir estrías."
+  },
+  {
+    "week": 20,
+    "type": "pregnancy",
+    "title": "Semana 20: ¡La mitad del camino!",
+    "body": "Estás en la mitad de tu embarazo. Tu bebé mide unos 25 cm y pesa alrededor de 300 gramos. Ya puede escuchar sonidos del exterior. Esta semana es clave para la ecografía morfológica que revisa el desarrollo de todos los órganos.",
+    "normal_symptoms": ["Movimientos del bebé (primeras pataditas)", "Dolor de espalda leve", "Congestión nasal", "Piel más brillante"],
+    "alert_signs": ["Hinchazón súbita de cara y manos", "Dolores de cabeza severos", "Visión borrosa"],
+    "tip": "Háblale y cántale a tu bebé — ya puede escucharte. Ponle música suave."
+  },
+  {
+    "week": 28,
+    "type": "pregnancy",
+    "title": "Semana 28: Los ojos de tu bebé",
+    "body": "Esta semana tu bebé puede abrir y cerrar los ojos y percibe cambios de luz. Pesa alrededor de 1 kilo y sus pulmones siguen madurando. Empieza el tercer trimestre — la recta final. Es momento de empezar a contar los movimientos fetales.",
+    "normal_symptoms": ["Movimientos frecuentes del bebé", "Acidez estomacal", "Hinchazón leve en pies", "Dificultad para dormir"],
+    "alert_signs": ["Ausencia de movimiento fetal por más de 2 horas", "Sangrado vaginal", "Contracciones regulares antes de tiempo"],
+    "tip": "Empieza a contar los movimientos de tu bebé 2 veces al día. Debes sentir al menos 10 movimientos en 2 horas."
+  },
+  {
+    "week": 32,
+    "type": "pregnancy",
+    "title": "Semana 32: Preparándose para nacer",
+    "body": "Tu bebé pesa cerca de 1.8 kg y mide unos 42 cm. Sus huesos se están endureciendo (excepto los del cráneo, que permanecen flexibles para el parto). Puede que sientas que el espacio se reduce — es normal, tu bebé está creciendo mucho.",
+    "normal_symptoms": ["Falta de aire", "Ganas frecuentes de orinar", "Contracciones de Braxton Hicks", "Dificultad para dormir"],
+    "alert_signs": ["Contracciones regulares (cada 10 min)", "Pérdida de líquido por la vagina", "Disminución de movimientos fetales"],
+    "tip": "Duerme de lado izquierdo para mejorar la circulación hacia tu bebé."
+  },
+  {
+    "week": 36,
+    "type": "pregnancy",
+    "title": "Semana 36: Casi lista",
+    "body": "Tu bebé pesa alrededor de 2.7 kg. Muchos bebés ya se colocan cabeza abajo esta semana. Tu cuerpo empieza a prepararse para el parto — puedes notar que la pancita 'baja'. Es hora de tener lista la maleta para el hospital.",
+    "normal_symptoms": ["Presión pélvica", "Respirar más fácil (el bebé bajó)", "Cansancio", "Contracciones de Braxton Hicks más frecuentes"],
+    "alert_signs": ["Ruptura de membranas (romper fuente)", "Sangrado abundante", "Dolor de cabeza severo con visión borrosa"],
+    "tip": "Ten lista tu maleta del hospital con: documentos, ropa para ti y el bebé, artículos de higiene y tu cargador de celular."
+  },
+  {
+    "week": 40,
+    "type": "pregnancy",
+    "title": "Semana 40: ¡La fecha ha llegado!",
+    "body": "Tu bebé está listo para nacer. Pesa en promedio 3.4 kg y mide unos 50 cm. No te preocupes si no ha nacido exactamente en la fecha — solo el 5% de los bebés nacen en la fecha probable de parto. Tu médico te guiará sobre los siguientes pasos.",
+    "normal_symptoms": ["Contracciones irregulares", "Expulsión del tapón mucoso", "Ansiedad y emoción", "Dificultad para dormir"],
+    "alert_signs": ["Contracciones regulares cada 5 minutos", "Ruptura de membranas", "Sangrado vaginal", "Disminución de movimientos"],
+    "tip": "Mantén la calma. Llama a tu médico cuando las contracciones sean regulares cada 5 minutos durante al menos una hora."
+  },
+  {
+    "week": 1,
+    "type": "baby",
+    "title": "Semana 1: ¡Bienvenido al mundo!",
+    "body": "Tu recién nacido duerme entre 16 y 17 horas al día y come cada 2-3 horas. Es normal que pierda un poco de peso los primeros días — lo recuperará pronto. El cordón umbilical se caerá solo en 1 a 3 semanas. Aprovecha para hacer contacto piel con piel.",
+    "normal_symptoms": ["Llanto frecuente", "Ictericia leve (piel amarillenta)", "Hipo frecuente", "Estornudos"],
+    "alert_signs": ["Fiebre mayor a 38°C", "No come ni orina en 8 horas", "Dificultad para respirar", "Ictericia que se extiende a piernas"],
+    "tip": "El contacto piel con piel regula la temperatura de tu bebé y fortalece el vínculo. Hazlo al menos 1 hora al día."
+  },
+  {
+    "week": 8,
+    "type": "baby",
+    "title": "Semana 8: Las primeras sonrisas",
+    "body": "Alrededor de las 6-8 semanas tu bebé empezará a regalarte sus primeras sonrisas sociales — ya no son solo reflejos. También empieza a seguir objetos con los ojos y a hacer sonidos como 'aah' y 'ooh'. Es un momento mágico de conexión.",
+    "normal_symptoms": ["Cólicos (llanto intenso en las tardes)", "Períodos de sueño más largos en la noche", "Mayor alerta durante el día"],
+    "alert_signs": ["No fija la mirada ni sigue objetos", "No reacciona a sonidos fuertes", "Llanto inconsolable por más de 3 horas"],
+    "tip": "Para los cólicos, prueba la posición del avión: pon al bebé boca abajo sobre tu antebrazo y mécelo suavemente."
+  },
+  {
+    "week": 16,
+    "type": "baby",
+    "title": "Semana 16: Explorando con las manos",
+    "body": "A los 4 meses tu bebé agarra objetos con las manos, se ríe a carcajadas y puede sostener la cabeza firme. Le fascina mirarse las manos y llevarse todo a la boca. Su sueño se está regulando — muchos bebés duermen 6-8 horas seguidas de noche.",
+    "normal_symptoms": ["Babeo excesivo (preparación para la dentición)", "Se lleva todo a la boca", "Puede rodar de boca arriba a boca abajo"],
+    "alert_signs": ["No sostiene la cabeza", "No sonríe ni hace sonidos", "No sigue objetos con la mirada"],
+    "tip": "Ofrécele juguetes de diferentes texturas para estimular su desarrollo sensorial. Asegúrate de que sean seguros para morder."
+  },
+  {
+    "week": 26,
+    "type": "baby",
+    "title": "Semana 26: Listo para los alimentos",
+    "body": "A los 6 meses es el momento ideal para iniciar la alimentación complementaria, según la OMS. Tu bebé probablemente ya se sienta con apoyo, muestra interés por la comida y ha perdido el reflejo de extrusión. Empieza con purés suaves de una sola fruta o verdura.",
+    "normal_symptoms": ["Interés por la comida de los adultos", "Se sienta con apoyo", "Primeros dientes pueden aparecer"],
+    "alert_signs": ["Rechazo total a todos los alimentos por más de 2 semanas", "Reacciones alérgicas (hinchazón, ronchas, vómito)", "No se sienta con apoyo"],
+    "tip": "Introduce un alimento nuevo cada 3 días para identificar posibles alergias. Empieza con calabaza, zanahoria o banano."
+  },
+  {
+    "week": 40,
+    "type": "baby",
+    "title": "Semana 40: Primeros pasos cerca",
+    "body": "A los 9-10 meses tu bebé probablemente gatea, se para agarrándose de los muebles y dice 'mamá' o 'papá' con intención. Entiende el 'no' y puede señalar objetos. Algunos bebés ya dan sus primeros pasos — pero cada bebé tiene su propio ritmo.",
+    "normal_symptoms": ["Ansiedad por separación", "Gateo activo", "Se para con apoyo", "Dice 1-2 palabras con significado"],
+    "alert_signs": ["No se sienta solo", "No balbucea ni hace sonidos", "No responde a su nombre", "No hace contacto visual"],
+    "tip": "Asegura tu casa para un bebé que se mueve: cubre enchufes, pon seguros en gabinetes y retira objetos pequeños del piso."
+  },
+  {
+    "week": 52,
+    "type": "baby",
+    "title": "Semana 52: ¡Feliz primer año!",
+    "body": "¡Tu bebé cumple un año! Probablemente camina con apoyo o solo, dice varias palabras, y entiende instrucciones simples. Ha triplicado su peso de nacimiento. Este es un hito enorme — celebra todo lo que has logrado como mamá.",
+    "normal_symptoms": ["Berrinches ocasionales", "Preferencia por ciertos alimentos", "Sueño de 11-14 horas diarias", "Mayor independencia"],
+    "alert_signs": ["No camina ni se para con apoyo", "No dice ninguna palabra", "No señala objetos", "Pérdida de habilidades que ya tenía"],
+    "tip": "Programa la cita de control del año con tu pediatra. Es momento de revisar el esquema de vacunación y el desarrollo integral."
+  }
+]
