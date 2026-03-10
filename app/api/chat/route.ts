@@ -61,9 +61,10 @@ export async function POST(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.error("Error en chat API:", error);
+    const msg = error instanceof Error ? error.message : String(error);
+    console.error("Error en chat API:", msg);
     return NextResponse.json(
-      { error: "Error al procesar el mensaje" },
+      { error: `Error del servidor: ${msg}` },
       { status: 500 }
     );
   }
