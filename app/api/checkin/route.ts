@@ -1,7 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sql } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   try {
+    const userId = request.headers.get("x-privy-user-id");
+    if (!userId) {
+      return NextResponse.json({ error: "No autenticado" }, { status: 401 });
+    }
+
     const body = await request.json();
     const { mood, notes, symptoms, weekNumber } = body;
 
@@ -12,40 +20,46 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (symptoms && !Array.isArray(symptoms)) {
-      return NextResponse.json(
-        { error: "Los síntomas deben ser una lista" },
-        { status: 400 }
-      );
-    }
+    await sql`
+      INSERT INTO checkins (id, privy_user_id, mood, notes, symptoms, week_number, created_at)
+      VALUES (
+        gen_random_uuid()::TEXT,
+        ${userId},
+        ${mood},
+        ${notes || null},
+        ${symptoms ? JSON.stringify(symptoms) : null},
+        ${weekNumber || null},
+        NOW()
+      )
+    `;
 
-    if (weekNumber !== undefined && (typeof weekNumber !== "number" || weekNumber < 1)) {
-      return NextResponse.json(
-        { error: "El número de semana debe ser un número positivo" },
-        { status: 400 }
-      );
-    }
-
-    // MVP: validate and return success
-    // In production, this would save to Supabase checkins table:
-    // const { data, error } = await supabase.from('checkins').insert({
-    //   user_id: userId,
-    //   baby_id: babyId,
-    //   mood,
-    //   notes: notes || null,
-    //   symptoms: symptoms || [],
-    //   week_number: weekNumber || null,
-    // });
-
-    return NextResponse.json({
-      success: true,
-      message: "Check-in guardado correctamente",
-    });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Error en check-in API:", error);
     return NextResponse.json(
       { error: "Error al guardar el check-in" },
       { status: 500 }
     );
+  }
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const userId = request.headers.get("x-privy-user-id");
+    if (!userId) {
+      return NextResponse.json({ error: "No autenticado" }, { status: 401 });
+    }
+
+    const checkins = await sql`
+      SELECT * FROM checkins
+      WHERE privy_user_id = ${userId}
+      ORDER BY created_at DESC
+      LIMIT 30
+    `;
+
+    return NextResponse.json({ checkins });
+  } catch (error) {
+    console.error("Error en checkin GET:", error);
+    return NextResponse.json({ error: "Error del servidor" }, { status: 500 });
   }
 }

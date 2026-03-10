@@ -1,57 +1,11 @@
 -- ============================================================
--- Ciguenapp — Neon Database Schema
+-- Ciguenapp — Neon Database Schema (Privy Auth)
 -- Run this in your Neon SQL editor (console.neon.tech)
 -- ============================================================
 
--- Users table (custom auth + NextAuth)
-CREATE TABLE IF NOT EXISTS users (
-  id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
-  name TEXT,
-  email TEXT UNIQUE NOT NULL,
-  email_verified TIMESTAMPTZ,
-  image TEXT,
-  password_hash TEXT,
-  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
--- NextAuth: OAuth accounts
-CREATE TABLE IF NOT EXISTS accounts (
-  id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
-  user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  type TEXT NOT NULL,
-  provider TEXT NOT NULL,
-  provider_account_id TEXT NOT NULL,
-  refresh_token TEXT,
-  access_token TEXT,
-  expires_at BIGINT,
-  token_type TEXT,
-  scope TEXT,
-  id_token TEXT,
-  session_state TEXT,
-  UNIQUE (provider, provider_account_id)
-);
-
--- NextAuth: Sessions (used when strategy = "database")
-CREATE TABLE IF NOT EXISTS sessions (
-  id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
-  session_token TEXT UNIQUE NOT NULL,
-  user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  expires TIMESTAMPTZ NOT NULL
-);
-
--- NextAuth: Verification tokens (email magic links)
-CREATE TABLE IF NOT EXISTS verification_tokens (
-  identifier TEXT NOT NULL,
-  token TEXT UNIQUE NOT NULL,
-  expires TIMESTAMPTZ NOT NULL,
-  PRIMARY KEY (identifier, token)
-);
-
--- App: User profiles (onboarding data)
+-- User profiles (keyed by Privy user ID)
 CREATE TABLE IF NOT EXISTS profiles (
-  id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
-  user_id TEXT UNIQUE NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  privy_user_id TEXT PRIMARY KEY,
   mother_name TEXT,
   status TEXT CHECK (status IN ('pregnant', 'born')),
   due_date DATE,
@@ -73,13 +27,16 @@ CREATE TABLE IF NOT EXISTS profiles (
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- App: Check-ins
+-- Daily check-ins
 CREATE TABLE IF NOT EXISTS checkins (
   id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
-  user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  privy_user_id TEXT NOT NULL,
   mood TEXT NOT NULL,
   notes TEXT,
   symptoms TEXT[],
   week_number INTEGER,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+CREATE INDEX IF NOT EXISTS checkins_user_idx ON checkins (privy_user_id);
+CREATE INDEX IF NOT EXISTS checkins_created_idx ON checkins (privy_user_id, created_at DESC);

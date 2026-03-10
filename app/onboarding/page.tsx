@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
+import { usePrivy } from "@privy-io/react-auth";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
 import { ArrowLeft, ArrowRight, Baby, Heart, BellRing, FileText, ShieldCheck } from "lucide-react";
@@ -101,6 +102,7 @@ function calculateBabyAge(birthDate: string): string {
 
 export default function OnboardingPage() {
   const router = useRouter();
+  const { user } = usePrivy();
   const [step, setStep] = useState(1);
   const [direction, setDirection] = useState(0);
   const [form, setForm] = useState<FormData>(initialFormData);
@@ -144,7 +146,10 @@ export default function OnboardingPage() {
     try {
       const res = await fetch("/api/onboarding", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-privy-user-id": user?.id ?? "",
+        } as Record<string, string>,
         body: JSON.stringify(form),
       });
       if (!res.ok) {
