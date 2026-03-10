@@ -11,6 +11,8 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
+    console.log("[onboarding] userId:", userId, "body keys:", Object.keys(body));
+
     const {
       motherName,
       status,

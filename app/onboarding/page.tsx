@@ -142,19 +142,47 @@ export default function OnboardingPage() {
   const displayName = form.preferredNameType === "mama" ? "Mamá" : form.preferredName;
 
   const handleSubmit = async () => {
+    // Guard: Privy user must be ready
+    if (!user?.id) {
+      toast.error("Sesión no lista. Espera un momento e intenta de nuevo.");
+      return;
+    }
+
     setIsSubmitting(true);
     try {
+      const payload = {
+        motherName: form.motherName.trim(),
+        status: form.status,
+        dueDate: form.dueDate || null,
+        pregnancyWeek: form.pregnancyWeek || null,
+        firstPregnancy: form.firstPregnancy,
+        chosenName: form.chosenName || null,
+        babyName: form.babyName || null,
+        birthDate: form.birthDate || null,
+        gender: form.gender || null,
+        firstChild: form.firstChild,
+        hasPediatrician: form.hasPediatrician,
+        hasGynecologist: form.hasGynecologist,
+        preferredName: form.preferredNameType === "mama" ? "Mamá" : form.preferredName.trim(),
+        dailyCheckIns: form.dailyCheckIns,
+        weeklyReports: form.weeklyReports,
+        alerts: form.alerts,
+      };
+
       const res = await fetch("/api/onboarding", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-privy-user-id": user?.id ?? "",
-        } as Record<string, string>,
-        body: JSON.stringify(form),
+          "x-privy-user-id": user.id,
+        },
+        body: JSON.stringify(payload),
       });
+
       if (!res.ok) {
-        throw new Error("Error al guardar tus datos");
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `Error ${res.status}`);
       }
+
       router.push("/dashboard");
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Algo salió mal. Intenta de nuevo.");
