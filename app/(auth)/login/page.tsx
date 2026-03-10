@@ -35,10 +35,26 @@ export default function LoginPage() {
       .finally(() => setChecking(false));
   }, [ready, authenticated, user?.id, router]);
 
-  if (!ready || checking) {
+  // While Privy loads or checking profile, show spinner
+  if (!ready || (authenticated && checking)) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <Loader2 className="size-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  // Already authenticated but redirect hasn't fired yet — show go to dashboard
+  if (authenticated && !checking) {
+    return (
+      <div className="min-h-screen flex items-center justify-center gap-4 flex-col">
+        <p className="text-muted-foreground text-sm">Ya tienes sesión iniciada.</p>
+        <button
+          className="text-primary underline text-sm"
+          onClick={() => router.push("/dashboard")}
+        >
+          Ir al panel →
+        </button>
       </div>
     );
   }

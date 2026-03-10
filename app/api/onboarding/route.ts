@@ -106,9 +106,10 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Error en onboarding API:", error);
+    const msg = error instanceof Error ? error.message : String(error);
+    console.error("Error en onboarding API:", msg);
     return NextResponse.json(
-      { error: "Error al crear el perfil" },
+      { error: `Error del servidor: ${msg}` },
       { status: 500 }
     );
   }
