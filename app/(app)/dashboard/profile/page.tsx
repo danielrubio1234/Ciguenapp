@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { signOut } from "next-auth/react";
+import { usePrivy } from "@privy-io/react-auth";
 
 // --- Animation variants ---
 
@@ -47,13 +47,15 @@ const itemVariants = {
 
 export default function ProfilePage() {
   const router = useRouter();
+  const { logout } = usePrivy();
   const [notificaciones, setNotificaciones] = useState(true);
   const [isSigningOut, setIsSigningOut] = useState(false);
 
   const handleSignOut = async () => {
     setIsSigningOut(true);
     try {
-      await signOut({ callbackUrl: "/login" });
+      await logout();
+      router.push("/login");
     } catch {
       toast.error("Error al cerrar sesion. Intenta de nuevo.");
       setIsSigningOut(false);
