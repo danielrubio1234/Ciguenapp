@@ -12,7 +12,7 @@ import CiguenaAvatar from "@/components/avatar/CiguenaAvatar";
 
 export default function LoginPage() {
   const router = useRouter();
-  const { ready, authenticated, user, login } = usePrivy();
+  const { ready, authenticated, user, login, logout } = usePrivy();
   const [checking, setChecking] = useState(false);
 
   // After auth: check if user has a profile → dashboard or onboarding
@@ -44,17 +44,25 @@ export default function LoginPage() {
     );
   }
 
-  // Already authenticated but redirect hasn't fired yet — show go to dashboard
+  // Already authenticated but redirect hasn't fired yet
   if (authenticated && !checking) {
     return (
-      <div className="min-h-screen flex items-center justify-center gap-4 flex-col">
-        <p className="text-muted-foreground text-sm">Ya tienes sesión iniciada.</p>
-        <button
-          className="text-primary underline text-sm"
-          onClick={() => router.push("/dashboard")}
-        >
-          Ir al panel →
-        </button>
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <p className="text-muted-foreground text-sm">Ya tienes sesión iniciada.</p>
+          <button
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"
+            onClick={() => router.push("/dashboard")}
+          >
+            Ir al panel →
+          </button>
+          <button
+            className="text-sm text-destructive hover:underline transition-colors"
+            onClick={async () => { await logout(); router.push("/login"); }}
+          >
+            Cerrar sesión
+          </button>
+        </div>
       </div>
     );
   }
