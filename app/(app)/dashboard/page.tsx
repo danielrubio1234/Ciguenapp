@@ -64,9 +64,10 @@ export default function DashboardPage() {
   const [submittingMood, setSubmittingMood] = useState(false);
   const [weeklyContent, setWeeklyContent] = useState<WeeklyContent | null>(null);
 
-  // Redirect to onboarding if profile not completed
+  // Redirect to onboarding if no profile or not completed
   useEffect(() => {
-    if (!loading && profile && !profile.onboarding_completed) {
+    if (loading) return;
+    if (!profile || !profile.onboarding_completed) {
       router.push("/onboarding");
     }
   }, [loading, profile, router]);

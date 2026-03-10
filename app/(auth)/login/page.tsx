@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { usePrivy } from "@privy-io/react-auth";
@@ -12,16 +12,30 @@ import CiguenaAvatar from "@/components/avatar/CiguenaAvatar";
 
 export default function LoginPage() {
   const router = useRouter();
-  const { ready, authenticated, login } = usePrivy();
+  const { ready, authenticated, user, login } = usePrivy();
+  const [checking, setChecking] = useState(false);
 
-  // If already authenticated, redirect to dashboard
+  // After auth: check if user has a profile → dashboard or onboarding
   useEffect(() => {
-    if (ready && authenticated) {
-      router.push("/dashboard");
-    }
-  }, [ready, authenticated, router]);
+    if (!ready || !authenticated || !user?.id) return;
 
-  if (!ready) {
+    setChecking(true);
+    fetch("/api/profile", {
+      headers: { "x-privy-user-id": user.id },
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.profile?.onboarding_completed) {
+          router.push("/dashboard");
+        } else {
+          router.push("/onboarding");
+        }
+      })
+      .catch(() => router.push("/onboarding"))
+      .finally(() => setChecking(false));
+  }, [ready, authenticated, user?.id, router]);
+
+  if (!ready || checking) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <Loader2 className="size-8 animate-spin text-primary" />
