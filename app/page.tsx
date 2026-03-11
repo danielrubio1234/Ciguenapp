@@ -154,12 +154,25 @@ export default function Home() {
           <a
             href="#como-funciona"
             className={cn(
-              buttonVariants({ variant: "outline", size: "lg" }),
-              "h-12 rounded-full border-white/30 px-8 text-base font-semibold text-white hover:bg-white/10 hover:text-white"
+              "h-12 rounded-full px-8 text-base font-semibold",
+              "inline-flex items-center justify-center",
+              "bg-warm-orange/20 border border-warm-orange/60 text-warm-orange",
+              "hover:bg-warm-orange/30 transition-colors"
             )}
           >
             Ver cómo funciona
           </a>
+          <Link
+            href="/login"
+            className={cn(
+              "h-12 rounded-full px-8 text-base font-semibold",
+              "inline-flex items-center justify-center",
+              "border border-white/30 text-white/70",
+              "hover:bg-white/10 hover:text-white transition-colors"
+            )}
+          >
+            Iniciar sesión
+          </Link>
         </motion.div>
 
         <motion.div
