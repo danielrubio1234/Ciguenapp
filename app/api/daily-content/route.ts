@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import weeklyContent from "@/data/weekly-content.json";
 
+export const dynamic = "force-dynamic";
+
 interface WeeklyContentItem {
   week: number;
   type: string;
@@ -9,6 +11,7 @@ interface WeeklyContentItem {
   normal_symptoms: string[];
   alert_signs: string[];
   tip: string;
+  milestone?: boolean;
 }
 
 export async function GET(request: NextRequest) {
@@ -43,25 +46,44 @@ export async function GET(request: NextRequest) {
         week,
         type,
         title: `Semana ${week}`,
-        body: "Contenido no disponible para este tipo. Consulta con tu profesional de salud para información personalizada.",
+        body: "Contenido no disponible. Consulta con tu profesional de salud para información personalizada.",
         normal_symptoms: [],
         alert_signs: [],
-        tip: "Recuerda asistir a tus controles prenatales regularmente.",
+        tip: "Recuerda asistir a tus controles regularmente.",
+        milestone: false,
       });
     }
 
-    // Find exact match
-    let match = filteredContent.find((item) => item.week === week);
-
-    // If no exact match, find the closest available week
-    if (!match) {
-      const sorted = [...filteredContent].sort(
-        (a, b) => Math.abs(a.week - week) - Math.abs(b.week - week)
-      );
-      match = sorted[0];
+    // Find exact match first
+    const exactMatch = filteredContent.find((item) => item.week === week);
+    if (exactMatch) {
+      return NextResponse.json(exactMatch);
     }
 
-    return NextResponse.json(match);
+    // Find the closest week BELOW (don't jump ahead to a future week)
+    const pastWeeks = filteredContent
+      .filter((item) => item.week < week)
+      .sort((a, b) => b.week - a.week);
+
+    if (pastWeeks.length > 0) {
+      // Return closest past week with adjusted title
+      const closest = pastWeeks[0];
+      return NextResponse.json({
+        ...closest,
+        title: closest.title,
+        weekDisplayed: closest.week,
+        weekRequested: week,
+      });
+    }
+
+    // If no past week exists, return the first available
+    const sorted = [...filteredContent].sort((a, b) => a.week - b.week);
+    return NextResponse.json({
+      ...sorted[0],
+      weekDisplayed: sorted[0].week,
+      weekRequested: week,
+    });
+
   } catch (error) {
     console.error("Error en daily-content API:", error);
     return NextResponse.json(

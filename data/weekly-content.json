@@ -1,119 +1,492 @@
 [
   {
+    "week": 1,
+    "type": "pregnancy",
+    "title": "Semana 1: El inicio de todo",
+    "body": "Técnicamente aún no hay embarazo, pero tu cuerpo ya se está preparando. El ciclo menstrual que acaba de terminar fue el inicio de este proceso. Tu útero se renueva y los óvulos maduran esperando el momento. Es el comienzo silencioso de algo enorme.",
+    "normal_symptoms": ["Fin de la menstruación", "Sin síntomas evidentes"],
+    "alert_signs": ["Sangrado inusual", "Dolor pélvico intenso"],
+    "tip": "Empieza a tomar ácido fólico si aún no lo haces. 400 mcg diarios reducen significativamente el riesgo de defectos del tubo neural.",
+    "milestone": false
+  },
+  {
+    "week": 2,
+    "type": "pregnancy",
+    "title": "Semana 2: La ovulación",
+    "body": "Esta semana ocurre la ovulación — el óvulo es liberado y tiene 12-24 horas para ser fecundado. Si hay fecundación, el cigoto comenzará su viaje hacia el útero. Tu cuerpo produce estrógeno y progesterona en preparación.",
+    "normal_symptoms": ["Moco cervical más claro y elástico", "Leve dolor en un costado (mittelschmerz)", "Aumento de libido"],
+    "alert_signs": ["Fiebre alta", "Dolor abdominal severo"],
+    "tip": "Si estás buscando embarazarte, este es el momento clave. Si ya lo estás, tu bebé fue concebido aproximadamente esta semana.",
+    "milestone": false
+  },
+  {
+    "week": 3,
+    "type": "pregnancy",
+    "title": "Semana 3: La fecundación",
+    "body": "¡Ocurrió! El espermatozoide fecundó el óvulo y se formó el cigoto. En los próximos días se divide y divide mientras viaja hacia el útero. Para el final de esta semana, una pequeña bola de células — la mórula — ya está en camino. No hay síntomas aún, pero la magia ya comenzó.",
+    "normal_symptoms": ["Sin síntomas evidentes", "Posible ligero cansancio"],
+    "alert_signs": ["Sangrado abundante", "Dolor pélvico fuerte"],
+    "tip": "Evita el alcohol, tabaco y medicamentos no recetados. El embrión es especialmente vulnerable en estas primeras semanas.",
+    "milestone": false
+  },
+  {
+    "week": 4,
+    "type": "pregnancy",
+    "title": "⭐ Semana 4: El test positivo",
+    "body": "¡Este es el momento! El embrión se implanta en el útero y el cuerpo empieza a producir hCG — la hormona del embarazo. Un test de embarazo ya puede detectarlo. Tu bebé es un blastocisto microscópico que ya tiene su propio ADN único. El corazón y el cerebro comenzarán a formarse pronto.",
+    "normal_symptoms": ["Retraso menstrual", "Senos sensibles", "Cansancio leve", "Posibles manchas de implantación"],
+    "alert_signs": ["Sangrado rojo abundante", "Dolor fuerte en un lado del abdomen (posible embarazo ectópico)"],
+    "tip": "Agenda tu primera cita prenatal. El médico confirmará el embarazo y calculará tu fecha probable de parto.",
+    "milestone": true
+  },
+  {
+    "week": 5,
+    "type": "pregnancy",
+    "title": "Semana 5: Las náuseas llegan",
+    "body": "Tu bebé ya tiene el tamaño de una semilla de sésamo y sus órganos principales comienzan a formarse. El corazón empieza a latir esta semana — aunque aún no es detectable por ultrasonido. Las náuseas matutinas pueden aparecer ahora; son señal de que el embarazo avanza bien.",
+    "normal_symptoms": ["Náuseas (a cualquier hora del día)", "Senos más grandes y sensibles", "Fatiga intensa", "Orinar con más frecuencia", "Cambios de humor"],
+    "alert_signs": ["Vómitos que impiden comer o beber", "Sangrado rojo", "Calambres intensos"],
+    "tip": "Para las náuseas: come porciones pequeñas frecuentes, galletas saladas al despertar y jengibre. Evita olores fuertes.",
+    "milestone": false
+  },
+  {
+    "week": 6,
+    "type": "pregnancy",
+    "title": "Semana 6: El corazón late",
+    "body": "¡El corazón de tu bebé ya late! Aproximadamente 100-160 veces por minuto. En esta semana mide unos 6mm — como un guisante. Se están formando los brotes de brazos y piernas, y el cerebro se desarrolla rápidamente. Puede que el ultrasonido ya detecte ese latido.",
+    "normal_symptoms": ["Náuseas intensas", "Salivación excesiva", "Aversiones a ciertos alimentos", "Cansancio extremo", "Acidez"],
+    "alert_signs": ["Ausencia total de síntomas de repente", "Sangrado", "Fiebre"],
+    "tip": "Si las náuseas son muy intensas, habla con tu médico. Existe medicación segura para el embarazo que puede ayudarte.",
+    "milestone": false
+  },
+  {
+    "week": 7,
+    "type": "pregnancy",
+    "title": "Semana 7: El cerebro crece",
+    "body": "Tu bebé mide 1 cm y su cerebro produce 100 nuevas células nerviosas por minuto. Se están formando los ojos, las fosas nasales, la boca y los oídos. El cordón umbilical está funcionando, llevando nutrientes. Tu útero ya duplicó su tamaño original.",
+    "normal_symptoms": ["Náuseas persistentes", "Estreñimiento", "Aumento de la cintura", "Antojos y aversiones", "Acné"],
+    "alert_signs": ["Sangrado con coágulos", "Dolor abdominal agudo", "Fiebre alta"],
+    "tip": "Hidrátate bien — el agua ayuda con el estreñimiento y las náuseas. Intenta al menos 8 vasos al día.",
+    "milestone": false
+  },
+  {
     "week": 8,
     "type": "pregnancy",
-    "title": "Semana 8: El corazón de tu bebé ya late",
-    "body": "En la semana 8, el corazón de tu bebé ya late con un ritmo regular. Tu pequeño mide aproximadamente 1.6 cm, del tamaño de un frijol. Los dedos de las manos y los pies comienzan a formarse, y los párpados empiezan a cubrir los ojos.",
-    "normal_symptoms": ["Náuseas matutinas", "Cansancio extremo", "Sensibilidad en los senos", "Cambios de humor"],
-    "alert_signs": ["Sangrado vaginal abundante", "Dolor abdominal intenso tipo cólico", "Fiebre mayor a 38°C"],
-    "tip": "Come galletas de soda antes de levantarte para aliviar las náuseas matutinas."
+    "title": "⭐ Semana 8: Primera ecografía",
+    "body": "En la semana 8, el corazón de tu bebé ya late con un ritmo regular. Tu pequeño mide aproximadamente 1.6 cm, del tamaño de un frijol. Los dedos de las manos y los pies comienzan a formarse, y los párpados empiezan a cubrir los ojos. Es el momento ideal para la primera ecografía.",
+    "normal_symptoms": ["Náuseas en su punto máximo", "Senos muy sensibles", "Fatiga intensa", "Cambios emocionales", "Aumento de peso leve"],
+    "alert_signs": ["Sangrado rojo", "Calambres fuertes", "Fiebre"],
+    "tip": "La primera ecografía confirmará el latido, la fecha de parto y si hay más de un bebé. ¡Es un momento muy emocionante!",
+    "milestone": true
+  },
+  {
+    "week": 9,
+    "type": "pregnancy",
+    "title": "Semana 9: Los músculos se desarrollan",
+    "body": "Tu bebé ya tiene todos los órganos esenciales formados — ahora solo necesitan crecer y madurar. Mide unos 2.3 cm. Puede mover los brazos aunque tú no lo sientas aún. La cola embrionaria ha desaparecido y ya tiene forma humana reconocible.",
+    "normal_symptoms": ["Náuseas que pueden empezar a mejorar", "Mayor volumen de sangre (posible mareo)", "Ligamento redondo (puntadas en abdomen)", "Sueños vividos"],
+    "alert_signs": ["Sangrado", "Desmayos frecuentes", "Dolor al orinar"],
+    "tip": "Empieza a usar ropa cómoda. El útero crece rápidamente aunque por fuera aún no se note mucho.",
+    "milestone": false
+  },
+  {
+    "week": 10,
+    "type": "pregnancy",
+    "title": "Semana 10: Del embrión al feto",
+    "body": "¡Oficial! Tu bebé ya se llama feto. Mide unos 3 cm y pesa aproximadamente 4 gramos. Sus órganos vitales están formados y funcionando. Las uñas empiezan a crecer. Si fuera posible verlo, ya reconocerías claramente un bebé en miniatura.",
+    "normal_symptoms": ["Alivio gradual de náuseas para algunas", "Línea nigra (línea oscura en abdomen)", "Senos muy crecidos", "Cansancio continuo"],
+    "alert_signs": ["Sangrado abundante", "Pérdida de líquido", "Dolor intenso"],
+    "tip": "Es buen momento para hablar con tu médico sobre el tamizaje del primer trimestre — ecografía + análisis de sangre para detectar posibles anomalías.",
+    "milestone": false
+  },
+  {
+    "week": 11,
+    "type": "pregnancy",
+    "title": "Semana 11: Los genitales se forman",
+    "body": "Tu bebé mide 4 cm y ya tiene genitales que se están diferenciando, aunque aún es temprano para verlos en ecografía. Sus huesos se endurecen, los riñones producen orina y el hígado trabaja. Puede hacer muecas y bostezar.",
+    "normal_symptoms": ["Las náuseas empiezan a disminuir", "Más energía en algunas mujeres", "Ligero aumento visible del abdomen", "Piel más brillante o con cambios"],
+    "alert_signs": ["Sangrado", "Calambres intensos", "Mareos frecuentes"],
+    "tip": "Si quieres saberlo, entre las semanas 11-14 se puede hacer la prueba de ADN fetal en sangre materna para conocer el sexo con alta precisión.",
+    "milestone": false
   },
   {
     "week": 12,
     "type": "pregnancy",
-    "title": "Semana 12: Fin del primer trimestre",
-    "body": "¡Felicitaciones! Estás terminando el primer trimestre. Tu bebé ya tiene todos los órganos formados y ahora empezarán a madurar. Mide unos 6 cm y puede abrir y cerrar los puños. Las náuseas probablemente empezarán a disminuir pronto.",
-    "normal_symptoms": ["Menos náuseas", "Más energía", "Ligero aumento de peso", "La pancita empieza a notarse"],
-    "alert_signs": ["Sangrado vaginal", "Dolor pélvico severo", "Mareos intensos con desmayos"],
-    "tip": "Este es un buen momento para empezar a usar crema hidratante en el abdomen para prevenir estrías."
+    "title": "⭐ Semana 12: Fin del primer trimestre",
+    "body": "¡Hito importante! El riesgo de aborto disminuye significativamente al llegar al final del primer trimestre. Tu bebé mide 5.4 cm y ya tiene todos sus sistemas orgánicos formados. El cerebro y los reflejos se desarrollan activamente. ¡Es momento de compartir la noticia si no lo has hecho!",
+    "normal_symptoms": ["Mejora notable de náuseas", "Regreso de energía", "Abdomen más visible", "Posible aparición de várices"],
+    "alert_signs": ["Sangrado", "Flujo con mal olor", "Presión pélvica intensa"],
+    "tip": "La ecografía del primer trimestre (11-13 semanas) mide la translucencia nucal — importante marcador de salud fetal. Asegúrate de tenerla.",
+    "milestone": true
+  },
+  {
+    "week": 13,
+    "type": "pregnancy",
+    "title": "Semana 13: Bienvenida al segundo trimestre",
+    "body": "¡Comienzo del segundo trimestre! Muchas mamás lo sienten como el mejor período del embarazo — las náuseas disminuyen, la energía regresa y la panza crece de forma hermosa. Tu bebé mide 7.4 cm, tiene huellas dactilares únicas y puede chuparse el dedo.",
+    "normal_symptoms": ["Más energía", "Apetito que regresa", "Panza más visible", "Ligamentos en estiramiento"],
+    "alert_signs": ["Sangrado", "Pérdida de líquido", "Contracciones regulares"],
+    "tip": "Es momento ideal para empezar a hidratar la piel del abdomen con aceites o cremas para prevenir estrías.",
+    "milestone": false
+  },
+  {
+    "week": 14,
+    "type": "pregnancy",
+    "title": "Semana 14: El bebé ya mueve los ojos",
+    "body": "Tu bebé mide 8.7 cm y puede mover los ojos aunque aún tiene los párpados cerrados. Produce insulina y su tiroides ya funciona. El cuello se alarga y la cabeza ya no domina tanto la figura — las proporciones se vuelven más humanas.",
+    "normal_symptoms": ["Mayor apetito", "Menos cansancio", "Abdomen creciendo", "Posible dolor de espalda leve"],
+    "alert_signs": ["Sangrado", "Ardor al orinar (infección urinaria)", "Visión borrosa"],
+    "tip": "Las infecciones urinarias son comunes en el embarazo y no siempre dan síntomas. Pide análisis de orina en tu próxima consulta.",
+    "milestone": false
+  },
+  {
+    "week": 15,
+    "type": "pregnancy",
+    "title": "Semana 15: El pelo y las cejas",
+    "body": "Tu bebé mide 10 cm y está cubierto de un vello fino llamado lanugo que lo mantiene caliente. Las cejas y el cabello comienzan a crecer. Sus piernas ya son más largas que sus brazos. Puede sentir la luz a través de tu abdomen aunque sus ojos estén cerrados.",
+    "normal_symptoms": ["Congestión nasal (rinitis del embarazo)", "Encías sensibles que sangran", "Energia estable", "Sueño profundo"],
+    "alert_signs": ["Sangrado de encías excesivo", "Sangrado vaginal", "Dolor de cabeza intenso"],
+    "tip": "Visita al dentista. La gingivitis del embarazo es muy común. La salud bucal está directamente ligada a la salud del bebé.",
+    "milestone": false
+  },
+  {
+    "week": 16,
+    "type": "pregnancy",
+    "title": "⭐ Semana 16: ¡Los primeros movimientos!",
+    "body": "Entre las semanas 16-20 muchas mamás sienten los primeros movimientos del bebé — como burbujas o mariposas en el abdomen. Tu bebé mide 11.6 cm y ya puede escucharte. Su sistema nervioso se conecta con los músculos y experimenta movimientos coordinados. ¡El sexo puede ser visible en ecografía!",
+    "normal_symptoms": ["Posibles primeros movimientos", "Abdomen bien visible", "Ligamento redondo (puntadas al moverse rápido)", "Mayor apetito"],
+    "alert_signs": ["Ausencia total de movimientos después de la semana 20", "Sangrado", "Contracciones"],
+    "tip": "Habla, canta y lee en voz alta. Tu bebé ya puede escuchar tu voz y reconocerá tu tono al nacer.",
+    "milestone": true
+  },
+  {
+    "week": 17,
+    "type": "pregnancy",
+    "title": "Semana 17: Los huesos se endurecen",
+    "body": "Tu bebé mide 13 cm y pesa unos 140 gramos. Sus huesos de cartílago se están convirtiendo en hueso real. Las huellas dactilares están completamente formadas. Puede hacer movimientos de succión y traga líquido amniótico regularmente.",
+    "normal_symptoms": ["Movimientos más perceptibles", "Dolor de espalda baja", "Edema leve en pies y tobillos", "Sueño más profundo o alterado"],
+    "alert_signs": ["Edema súbito en cara o manos", "Dolor de cabeza fuerte", "Visión borrosa"],
+    "tip": "Considera una almohada de embarazo para dormir. Dormir del lado izquierdo mejora la circulación hacia el bebé.",
+    "milestone": false
+  },
+  {
+    "week": 18,
+    "type": "pregnancy",
+    "title": "Semana 18: El bebé escucha",
+    "body": "Tu bebé mide 14.2 cm y ya puede escuchar claramente — el latido de tu corazón, tu voz, los sonidos externos. Puede que se mueva cuando escucha música. Sus ojos pueden detectar la luz. El sistema nervioso se conecta activamente con todos los sentidos.",
+    "normal_symptoms": ["Movimientos más fuertes y frecuentes", "Dolor de espalda", "Calambres en piernas por las noches", "Mayor apetito"],
+    "alert_signs": ["Sangrado", "Fiebre", "Pérdida de líquido amniótico"],
+    "tip": "Es buen momento para preparar la bolsa del hospital, aunque parezca temprano. Tener las cosas listas reduce el estrés las últimas semanas.",
+    "milestone": false
+  },
+  {
+    "week": 19,
+    "type": "pregnancy",
+    "title": "Semana 19: El vernix caseosa",
+    "body": "Tu bebé mide 15.3 cm y está cubierto de vernix caseosa — una capa blanca grasosa que protege su piel del líquido amniótico. Es el mismo recubrimiento que verás al nacer. Las neuronas sensoriales se organizan en el cerebro para el tacto, gusto, olfato, vista y oído.",
+    "normal_symptoms": ["Movimientos activos", "Presión en el bajo vientre", "Sed aumentada", "Pigmentación en piel (cloasma)"],
+    "alert_signs": ["Contracciones regulares", "Sangrado", "Pérdida de líquido"],
+    "tip": "El cloasma (manchas en la cara) es normal y temporal. Usa protector solar alto a diario para minimizarlo.",
+    "milestone": false
   },
   {
     "week": 20,
     "type": "pregnancy",
-    "title": "Semana 20: ¡La mitad del camino!",
-    "body": "Estás en la mitad de tu embarazo. Tu bebé mide unos 25 cm y pesa alrededor de 300 gramos. Ya puede escuchar sonidos del exterior. Esta semana es clave para la ecografía morfológica que revisa el desarrollo de todos los órganos.",
-    "normal_symptoms": ["Movimientos del bebé (primeras pataditas)", "Dolor de espalda leve", "Congestión nasal", "Piel más brillante"],
-    "alert_signs": ["Hinchazón súbita de cara y manos", "Dolores de cabeza severos", "Visión borrosa"],
-    "tip": "Háblale y cántale a tu bebé — ya puede escucharte. Ponle música suave."
+    "title": "⭐ Semana 20: ¡La mitad del camino!",
+    "body": "¡Estás en la mitad del embarazo! Tu bebé mide 16.4 cm de coronilla a nalgas (25 cm total) y pesa unos 300 gramos. La ecografía morfológica de esta semana revisará cada órgano y sistema. Es el momento más detallado para ver a tu bebé. ¡Celebra este hito!",
+    "normal_symptoms": ["Movimientos bien establecidos", "Ombligo que puede sobresalir", "Dolor en ligamentos", "Ronquidos (por congestión)"],
+    "alert_signs": ["Resultado anormal en ecografía morfológica", "Sangrado", "Pérdida de líquido"],
+    "tip": "La ecografía morfológica del segundo trimestre es la más importante. No faltes y lleva a quien quieras para compartir el momento.",
+    "milestone": true
+  },
+  {
+    "week": 21,
+    "type": "pregnancy",
+    "title": "Semana 21: El bebé traga y patea",
+    "body": "Tu bebé mide 26.7 cm y pesa 360 gramos. Traga líquido amniótico regularmente — practicando para comer. Sus patadas son cada vez más fuertes y perceptibles. El labio superior y las cejas ya están bien definidos. Puede tener hipo, que sentirás como movimientos rítmicos.",
+    "normal_symptoms": ["Patadas fuertes y frecuentes", "Hipo fetal (movimientos rítmicos)", "Ardor estomacal", "Dolor de espalda"],
+    "alert_signs": ["Sangrado", "Contracciones antes de semana 37", "Presión pélvica intensa"],
+    "tip": "El ardor estomacal es muy común en el segundo trimestre. Evita comidas grasas, come despacio y no te acuestes inmediatamente después de comer.",
+    "milestone": false
+  },
+  {
+    "week": 22,
+    "type": "pregnancy",
+    "title": "Semana 22: Los sentidos maduran",
+    "body": "Tu bebé mide 27.8 cm y pesa unos 430 gramos. Sus labios, cejas y párpados son más distintos. Sus sentidos del tacto y gusto son muy activos — explora el líquido amniótico. El cerebro y los pulmones se desarrollan intensamente esta semana.",
+    "normal_symptoms": ["Movimientos muy activos", "Posible insomnio", "Calambres en las piernas", "Várices"],
+    "alert_signs": ["Sangrado", "Signos de preeclampsia (dolor de cabeza intenso, visión borrosa, hinchazón súbita)", "Contracciones regulares"],
+    "tip": "Las medias de compresión ayudan con las várices y el edema. Elevar los pies cuando puedas también ayuda mucho.",
+    "milestone": false
+  },
+  {
+    "week": 23,
+    "type": "pregnancy",
+    "title": "Semana 23: La piel se vuelve opaca",
+    "body": "Tu bebé mide 28.9 cm y pesa 501 gramos. Su piel, que era transparente, se vuelve opaca a medida que se acumula grasa debajo. El sistema vestibular (equilibrio) está madurando — puede sentir cuando te mueves. Los pulmones producen surfactante, esencial para respirar al nacer.",
+    "normal_symptoms": ["Abdomen bien prominente", "Línea nigra visible", "Posibles hemorroides", "Cansancio que regresa"],
+    "alert_signs": ["Contracciones regulares", "Presión pélvica fuerte", "Cambios en flujo vaginal"],
+    "tip": "Aprende las señales de parto prematuro: contracciones regulares, presión pélvica, pérdida de líquido o sangrado antes de la semana 37.",
+    "milestone": false
+  },
+  {
+    "week": 24,
+    "type": "pregnancy",
+    "title": "⭐ Semana 24: La viabilidad",
+    "body": "Hito médico importante: a partir de esta semana, un bebé prematuro tiene posibilidades de sobrevivir con cuidados intensivos neonatales. Tu bebé mide 30 cm y pesa 600 gramos. Sus huellas palmares y plantares están formadas. El cerebro crece muy rápidamente.",
+    "normal_symptoms": ["Posible prueba de glucosa (diabetes gestacional)", "Edema en pies", "Dolores de espalda", "Respiración más corta"],
+    "alert_signs": ["Contracciones regulares antes de semana 37", "Pérdida de líquido", "Sangrado"],
+    "tip": "Entre las semanas 24-28 se hace la prueba de glucosa para detectar diabetes gestacional. No la omitas — es tratable y muy importante.",
+    "milestone": true
+  },
+  {
+    "week": 25,
+    "type": "pregnancy",
+    "title": "Semana 25: El cabello crece",
+    "body": "Tu bebé mide 34.6 cm y pesa unos 660 gramos. Su cabello ya tiene color y textura, aunque puede cambiar después de nacer. La grasa corporal sigue acumulándose para regular la temperatura. Sus respuestas a sonidos son más consistentes — puede sobresaltarse con ruidos fuertes.",
+    "normal_symptoms": ["Movimientos fuertes y regulares", "Ardor estomacal intenso", "Dificultad para dormir cómoda", "Calambres en piernas"],
+    "alert_signs": ["Sangrado", "Contracciones regulares", "Pérdida de líquido"],
+    "tip": "Registra los movimientos de tu bebé. Si sientes menos de 10 movimientos en 2 horas después de la semana 28, consulta a tu médico.",
+    "milestone": false
+  },
+  {
+    "week": 26,
+    "type": "pregnancy",
+    "title": "Semana 26: Los ojos se abren",
+    "body": "¡Tu bebé puede abrir los ojos! Mide 35.6 cm y pesa unos 760 gramos. Sus pulmones continúan madurando y produce más surfactante. Puede responder a la luz brillante que atraviesa tu abdomen. El cerebro registra y almacena experiencias sensoriales.",
+    "normal_symptoms": ["Posible dificultad para respirar profundo", "Edema en manos y pies", "Calambres", "Ansiedad sobre el parto"],
+    "alert_signs": ["Pérdida súbita de movimientos", "Sangrado", "Contracciones regulares", "Hinchazón repentina de cara"],
+    "tip": "Es buen momento para inscribirse en clases de preparación al parto. Conocer el proceso reduce el miedo y empodera.",
+    "milestone": false
+  },
+  {
+    "week": 27,
+    "type": "pregnancy",
+    "title": "Semana 27: Fin del segundo trimestre",
+    "body": "¡Última semana del segundo trimestre! Tu bebé mide 36.6 cm y pesa casi 900 gramos. Está ganando peso rápidamente. Sus pulmones y cerebro continúan madurando. Puede tener ciclos de sueño y vigilia que quizás ya reconoces por sus patrones de movimiento.",
+    "normal_symptoms": ["Movimientos bien establecidos y reconocibles", "Ardor estomacal frecuente", "Hemorroides", "Insomnio"],
+    "alert_signs": ["Sangrado", "Contracciones antes de semana 37", "Pérdida de líquido"],
+    "tip": "Empieza a preparar el espacio del bebé en casa. Tener el nido listo antes de la semana 36 reduce el estrés del final del embarazo.",
+    "milestone": false
   },
   {
     "week": 28,
     "type": "pregnancy",
-    "title": "Semana 28: Los ojos de tu bebé",
-    "body": "Esta semana tu bebé puede abrir y cerrar los ojos y percibe cambios de luz. Pesa alrededor de 1 kilo y sus pulmones siguen madurando. Empieza el tercer trimestre — la recta final. Es momento de empezar a contar los movimientos fetales.",
-    "normal_symptoms": ["Movimientos frecuentes del bebé", "Acidez estomacal", "Hinchazón leve en pies", "Dificultad para dormir"],
-    "alert_signs": ["Ausencia de movimiento fetal por más de 2 horas", "Sangrado vaginal", "Contracciones regulares antes de tiempo"],
-    "tip": "Empieza a contar los movimientos de tu bebé 2 veces al día. Debes sentir al menos 10 movimientos en 2 horas."
+    "title": "⭐ Semana 28: Tercer trimestre",
+    "body": "¡Bienvenida al tercer trimestre! Tu bebé mide 37.6 cm y pesa 1 kg. Sus ojos pueden abrirse y cerrarse, y distingue entre luz y oscuridad. El cerebro se desarrolla intensamente formando los pliegues característicos. A partir de ahora, las consultas prenatales serán más frecuentes.",
+    "normal_symptoms": ["Mayor cansancio", "Dificultad para respirar profundo", "Contracciones de Braxton Hicks (irregulares, no dolorosas)", "Edema"],
+    "alert_signs": ["Contracciones regulares y dolorosas", "Pérdida de líquido", "Sangrado", "Movimientos del bebé reducidos"],
+    "tip": "Aprende a distinguir las contracciones de Braxton Hicks (preparatorias, irregulares) de las contracciones de parto (regulares, progresivamente más intensas).",
+    "milestone": true
+  },
+  {
+    "week": 29,
+    "type": "pregnancy",
+    "title": "Semana 29: Los huesos necesitan calcio",
+    "body": "Tu bebé mide 38.6 cm y pesa 1.15 kg. Sus huesos están absorbiendo calcio activamente — necesitan unos 250 mg diarios. Los músculos y pulmones continúan madurando. Puedes sentir sus movimientos desde fuera, incluso ver tu abdomen moverse.",
+    "normal_symptoms": ["Dificultad para respirar (el útero presiona el diafragma)", "Ardor estomacal intenso", "Micción muy frecuente", "Varices"],
+    "alert_signs": ["Pérdida de líquido", "Sangrado", "Dolor de cabeza intenso con visión borrosa", "Contracciones regulares"],
+    "tip": "Aumenta el consumo de calcio: lácteos, almendras, sardinas, brócoli, tofu. Si no es suficiente con la dieta, consulta suplementación con tu médico.",
+    "milestone": false
+  },
+  {
+    "week": 30,
+    "type": "pregnancy",
+    "title": "Semana 30: El bebé práctica respirar",
+    "body": "Tu bebé mide 39.9 cm y pesa 1.3 kg. Practica movimientos respiratorios aunque sus pulmones aún no estén completamente maduros. Su cabello puede ser ya bastante largo. El cerebro desarrolla miles de conexiones nuevas cada día. Ocupa cada vez más espacio.",
+    "normal_symptoms": ["Abdomen muy grande y pesado", "Dolor en costillas (patadas del bebé)", "Calambres frecuentes", "Dificultad para encontrar posición cómoda"],
+    "alert_signs": ["Pérdida de líquido", "Sangrado", "Presión intensa en la pelvis", "Contracciones regulares"],
+    "tip": "El yoga prenatal y la natación son excelentes en esta etapa — alivian el dolor de espalda y mejoran la circulación sin impacto.",
+    "milestone": false
+  },
+  {
+    "week": 31,
+    "type": "pregnancy",
+    "title": "Semana 31: Los sentidos están casi completos",
+    "body": "Tu bebé mide 41.1 cm y pesa 1.5 kg. Todos sus sentidos están prácticamente completos. Puede seguir la luz, percibir sabores en el líquido amniótico y reconocer voces conocidas. Pasa más tiempo despierto y sus movimientos son muy perceptibles.",
+    "normal_symptoms": ["Insomnio", "Necesidad de orinar muy frecuente de noche", "Hinchazón en pies", "Fatiga intensa"],
+    "alert_signs": ["Sangrado", "Pérdida de líquido", "Contracciones regulares", "Disminución notable de movimientos"],
+    "tip": "Prepara tu plan de parto: ¿qué tipo de parto deseas? ¿Epidural? ¿Piel con piel inmediato? Escríbelo y compártelo con tu equipo médico.",
+    "milestone": false
   },
   {
     "week": 32,
     "type": "pregnancy",
-    "title": "Semana 32: Preparándose para nacer",
-    "body": "Tu bebé pesa cerca de 1.8 kg y mide unos 42 cm. Sus huesos se están endureciendo (excepto los del cráneo, que permanecen flexibles para el parto). Puede que sientas que el espacio se reduce — es normal, tu bebé está creciendo mucho.",
-    "normal_symptoms": ["Falta de aire", "Ganas frecuentes de orinar", "Contracciones de Braxton Hicks", "Dificultad para dormir"],
-    "alert_signs": ["Contracciones regulares (cada 10 min)", "Pérdida de líquido por la vagina", "Disminución de movimientos fetales"],
-    "tip": "Duerme de lado izquierdo para mejorar la circulación hacia tu bebé."
+    "title": "⭐ Semana 32: El bebé se acomoda",
+    "body": "Tu bebé mide 42.4 cm y pesa 1.7 kg. La mayoría de los bebés empiezan a girar hacia posición cefálica (cabeza abajo) esta semana. Sus uñas han crecido hasta el borde de los dedos. Los pulmones están casi maduros — un bebé nacido ahora tiene muy buenas posibilidades con atención médica.",
+    "normal_symptoms": ["Presión pélvica si el bebé bajó", "Contracciones de Braxton Hicks más frecuentes", "Dificultad para respirar", "Edema"],
+    "alert_signs": ["Bebé en posición podálica (de nalgas) después de semana 36", "Sangrado", "Pérdida de líquido", "Contracciones regulares"],
+    "tip": "Si el bebé está de nalgas, hay técnicas como la posición moxibustión o ejercicios específicos que pueden ayudar a que gire. Consulta con tu médico.",
+    "milestone": true
+  },
+  {
+    "week": 33,
+    "type": "pregnancy",
+    "title": "Semana 33: El cerebro se acelera",
+    "body": "Tu bebé mide 43.7 cm y pesa 1.9 kg. Su cerebro está en uno de sus momentos de desarrollo más intensos. Los huesos están casi completamente formados aunque el cráneo permanece flexible para facilitar el parto. El lanugo (vello fino) empieza a desaparecer.",
+    "normal_symptoms": ["Contracciones de Braxton Hicks más intensas", "Dolor pélvico", "Piernas pesadas", "Dificultad para moverse"],
+    "alert_signs": ["Pérdida de líquido", "Sangrado", "Contracciones regulares", "Presión pélvica intensa y constante"],
+    "tip": "Practica técnicas de respiración para el parto. La respiración consciente es tu mejor herramienta durante las contracciones.",
+    "milestone": false
+  },
+  {
+    "week": 34,
+    "type": "pregnancy",
+    "title": "Semana 34: Los pulmones maduran",
+    "body": "Tu bebé mide 45 cm y pesa 2.1 kg. Sus pulmones están casi completamente maduros. Un bebé nacido en la semana 34 tiene excelente pronóstico, aunque puede necesitar apoyo inicial. El vernix caseosa que cubre su piel comenzará a disminuir.",
+    "normal_symptoms": ["Dificultad para respirar profundo", "Calambres en piernas", "Insomnio", "Ansiedad sobre el parto"],
+    "alert_signs": ["Pérdida de líquido", "Sangrado rojo brillante", "Contracciones regulares", "Dolor de cabeza severo con visión borrosa"],
+    "tip": "Instala la silla del carro esta semana. Los hospitales suelen pedir que el bebé salga en silla de carro — tenla lista.",
+    "milestone": false
+  },
+  {
+    "week": 35,
+    "type": "pregnancy",
+    "title": "Semana 35: El bebé llena el espacio",
+    "body": "Tu bebé mide 46.2 cm y pesa 2.4 kg. Ya no tiene mucho espacio para moverse libremente — sus movimientos cambian de patadas a estiramientos y giros. Sus riñones están completamente maduros. Está acumulando grasa en sus mejillas para succionar al mamar.",
+    "normal_symptoms": ["Sensación de que el bebé está 'muy lleno'", "Dificultad para respirar", "Presión en la pelvis", "Dificultad para caminar"],
+    "alert_signs": ["Cambio brusco en patrón de movimientos", "Pérdida de líquido", "Sangrado", "Contracciones regulares"],
+    "tip": "Ten lista la bolsa del hospital con todo lo necesario para ti y el bebé. Sé específica: ropa, documentos, snacks, cargadores.",
+    "milestone": false
   },
   {
     "week": 36,
     "type": "pregnancy",
-    "title": "Semana 36: Casi lista",
-    "body": "Tu bebé pesa alrededor de 2.7 kg. Muchos bebés ya se colocan cabeza abajo esta semana. Tu cuerpo empieza a prepararse para el parto — puedes notar que la pancita 'baja'. Es hora de tener lista la maleta para el hospital.",
-    "normal_symptoms": ["Presión pélvica", "Respirar más fácil (el bebé bajó)", "Cansancio", "Contracciones de Braxton Hicks más frecuentes"],
-    "alert_signs": ["Ruptura de membranas (romper fuente)", "Sangrado abundante", "Dolor de cabeza severo con visión borrosa"],
-    "tip": "Ten lista tu maleta del hospital con: documentos, ropa para ti y el bebé, artículos de higiene y tu cargador de celular."
+    "title": "⭐ Semana 36: Pre-término completo",
+    "body": "¡Tu bebé ya es pre-término completo! Mide 47.4 cm y pesa 2.6 kg. Si nace ahora, probablemente no necesitará cuidados intensivos. Muchos bebés bajan a la pelvis esta semana, aliviando la presión en el diafragma — respirarás mejor pero tendrás más presión abajo.",
+    "normal_symptoms": ["Alivio respiratorio si el bebé bajó", "Presión pélvica intensa", "Necesidad urgente de orinar constantemente", "Nesting (impulso de organizar todo)"],
+    "alert_signs": ["Pérdida del tapón mucoso (señal de que el parto se acerca)", "Contracciones regulares", "Pérdida de líquido", "Sangrado"],
+    "tip": "El tapón mucoso puede perderse días o semanas antes del parto. Si ves flujo espeso rosado o sanguinolento, avisa a tu médico.",
+    "milestone": true
+  },
+  {
+    "week": 37,
+    "type": "pregnancy",
+    "title": "Semana 37: ¡Término completo!",
+    "body": "¡Tu bebé ya es de término completo! Mide 48.6 cm y pesa 2.9 kg. Todos sus sistemas están maduros y listos para la vida fuera del útero. El parto puede ocurrir en cualquier momento desde ahora hasta la semana 42. Cada día que pasa, el bebé gana más peso y fuerza.",
+    "normal_symptoms": ["Contracciones de Braxton Hicks muy frecuentes", "Pérdida del tapón mucoso", "Necesidad de ir al baño constantemente", "Dificultad para caminar"],
+    "alert_signs": ["Contracciones cada 5 minutos por más de 1 hora", "Pérdida de líquido amniótico", "Sangrado rojo abundante", "Movimientos reducidos"],
+    "tip": "Señales de parto: contracciones regulares cada 5-7 minutos que aumentan en intensidad, rotura de membranas, pérdida de tapón con sangre. ¡Ve al hospital!",
+    "milestone": false
+  },
+  {
+    "week": 38,
+    "type": "pregnancy",
+    "title": "Semana 38: En espera",
+    "body": "Tu bebé mide 49.8 cm y pesa 3.1 kg. Sus órganos están completamente maduros. El cuerpo produce más oxitocina que desencadenará el parto. El cuello del útero puede estar ablandándose y dilatando. Cada día es un poquito diferente acercándote al gran momento.",
+    "normal_symptoms": ["Insomnio intenso", "Ansiedad", "Contracciones irregulares frecuentes", "Flujo vaginal aumentado", "Nesting intenso"],
+    "alert_signs": ["Contracciones regulares y progresivas", "Rotura de bolsa", "Sangrado rojo", "Bebé sin movimientos por varias horas"],
+    "tip": "Descansa todo lo que puedas — el parto requiere energía. Aprovecha cada siesta aunque la ansiedad dificulte dormir.",
+    "milestone": false
+  },
+  {
+    "week": 39,
+    "type": "pregnancy",
+    "title": "Semana 39: Cualquier día ahora",
+    "body": "Tu bebé mide 50.7 cm y pesa 3.3 kg. Está completamente listo para nacer. El placenta, que lo ha nutrido 9 meses, empieza a envejecer. El cuello uterino continúa madurando. El 80% de los bebés nacen entre la semana 38 y 41 — la espera es completamente normal.",
+    "normal_symptoms": ["Todo intensificado: presión, contracciones, frecuencia urinaria", "Posible pérdida de tapón mucoso", "Diarrea leve (señal de parto inminente)", "Ansiedad y emoción mezcladas"],
+    "alert_signs": ["Contracciones cada 5 minutos por más de 1 hora", "Pérdida de líquido transparente o verdoso", "Sangrado rojo abundante", "Menos de 10 movimientos en 2 horas"],
+    "tip": "Confía en tu cuerpo. Millones de mujeres han pasado por esto. Estás preparada y tu cuerpo sabe qué hacer.",
+    "milestone": false
   },
   {
     "week": 40,
     "type": "pregnancy",
-    "title": "Semana 40: ¡La fecha ha llegado!",
-    "body": "Tu bebé está listo para nacer. Pesa en promedio 3.4 kg y mide unos 50 cm. No te preocupes si no ha nacido exactamente en la fecha — solo el 5% de los bebés nacen en la fecha probable de parto. Tu médico te guiará sobre los siguientes pasos.",
-    "normal_symptoms": ["Contracciones irregulares", "Expulsión del tapón mucoso", "Ansiedad y emoción", "Dificultad para dormir"],
-    "alert_signs": ["Contracciones regulares cada 5 minutos", "Ruptura de membranas", "Sangrado vaginal", "Disminución de movimientos"],
-    "tip": "Mantén la calma. Llama a tu médico cuando las contracciones sean regulares cada 5 minutos durante al menos una hora."
+    "title": "⭐ Semana 40: ¡La fecha ha llegado!",
+    "body": "¡Has llegado a la fecha probable de parto! Tu bebé mide unos 51 cm y pesa aproximadamente 3.4 kg, aunque puede haber variación. Solo el 5% de los bebés nacen exactamente en la fecha — es normal nacer antes o después. Tu cuerpo y tu bebé saben cuándo es el momento.",
+    "normal_symptoms": ["Todo puede cambiar en cualquier momento", "Contracciones de práctica muy frecuentes", "Presión pélvica máxima", "Ansiedad mezclada con emoción"],
+    "alert_signs": ["Sin señales de parto después de semana 41 (tu médico evaluará inducción)", "Líquido amniótico verdoso o con sangre", "Movimientos muy reducidos", "Sangrado abundante"],
+    "tip": "Si tu fecha llegó y el bebé no — ten paciencia y confianza. Tu médico te monitoreará de cerca. El bebé llegará cuando esté listo.",
+    "milestone": true
   },
   {
     "week": 1,
     "type": "baby",
-    "title": "Semana 1: ¡Bienvenido al mundo!",
-    "body": "Tu recién nacido duerme entre 16 y 17 horas al día y come cada 2-3 horas. Es normal que pierda un poco de peso los primeros días — lo recuperará pronto. El cordón umbilical se caerá solo en 1 a 3 semanas. Aprovecha para hacer contacto piel con piel.",
-    "normal_symptoms": ["Llanto frecuente", "Ictericia leve (piel amarillenta)", "Hipo frecuente", "Estornudos"],
-    "alert_signs": ["Fiebre mayor a 38°C", "No come ni orina en 8 horas", "Dificultad para respirar", "Ictericia que se extiende a piernas"],
-    "tip": "El contacto piel con piel regula la temperatura de tu bebé y fortalece el vínculo. Hazlo al menos 1 hora al día."
+    "title": "⭐ Semana 1: ¡Bienvenido al mundo!",
+    "body": "¡Tu bebé llegó! La primera semana es de adaptación para ambos. Tu recién nacido duerme entre 16-18 horas al día y come cada 2-3 horas. Su único trabajo ahora es comer, dormir y crecer. Y el tuyo es descansar cuando él descanse y pedir ayuda cuando la necesites.",
+    "normal_symptoms": ["Llanto frecuente (comunicación)", "Piel descamándose (normal)", "Ictericia leve (amarillamiento de piel)", "Cordón umbilical aún sin caer"],
+    "alert_signs": ["Ictericia intensa (muy amarillo)", "Fiebre mayor a 38°C", "Dificultad para respirar", "No come en más de 4 horas"],
+    "tip": "El pecho de mamá es el mejor lugar para el bebé. El contacto piel con piel regula su temperatura, su ritmo cardíaco y favorece la lactancia.",
+    "milestone": true
+  },
+  {
+    "week": 2,
+    "type": "baby",
+    "title": "Semana 2: El cordón cae",
+    "body": "El cordón umbilical suele caer entre los 7-21 días. Tu bebé empieza a recuperar su peso de nacimiento — los bebés pierden hasta 10% al inicio y lo recuperan en 2 semanas. Sus ojos buscan la luz y puede enfocar objetos a 20-30 cm de distancia, justo la distancia de tu cara.",
+    "normal_symptoms": ["Sigue durmiendo mucho", "Hipo frecuente (normal)", "Estornudos (no significa resfriado)", "Cambios de color en piel"],
+    "alert_signs": ["Cordón con olor mal o con pus", "Pérdida de peso continua", "Fiebre", "Letargia extrema"],
+    "tip": "Limpia el cordón con alcohol o gasa seca según indicación médica. Expónlo al aire y evita cubrir con el pañal.",
+    "milestone": false
+  },
+  {
+    "week": 3,
+    "type": "baby",
+    "title": "Semana 3: El cólico puede aparecer",
+    "body": "Alrededor de la semana 3 puede comenzar el cólico — llanto intenso, especialmente de tarde-noche, sin causa aparente. Es normal y suele desaparecer a los 3 meses. Tu bebé empieza a estar más alerta y responde más a tu voz y cara.",
+    "normal_symptoms": ["Llanto más prolongado", "Mayor estado de alerta", "Movimientos más coordinados de brazos"],
+    "alert_signs": ["Llanto con fiebre", "Vómitos en proyectil", "Rechazo total al alimento", "Cambios en color de piel"],
+    "tip": "Para el cólico: cargarlo boca abajo sobre tu antebrazo, movimientos suaves, ruido blanco, calor en el abdomen. Pasará.",
+    "milestone": false
+  },
+  {
+    "week": 4,
+    "type": "baby",
+    "title": "Semana 4: Un mes de vida",
+    "body": "¡Un mes! Tu bebé ha crecido notablemente. Puede seguir objetos en movimiento con los ojos y reacciona a sonidos conocidos. Sus movimientos de brazos y piernas son más coordinados. Esta semana muchos bebés dan su primera sonrisa social — aunque puede ser gas, merece celebrarse.",
+    "normal_symptoms": ["Mayor vigilia durante el día", "Posible confusión día-noche", "Comes más si es lactancia materna (estirón)"],
+    "alert_signs": ["No sigue objetos con los ojos", "No reacciona a sonidos fuertes", "No come bien", "Fiebre"],
+    "tip": "La primera consulta de control suele ser al mes. El médico revisará el crecimiento, la audición y administrará las primeras vacunas.",
+    "milestone": false
   },
   {
     "week": 8,
     "type": "baby",
-    "title": "Semana 8: Las primeras sonrisas",
-    "body": "Alrededor de las 6-8 semanas tu bebé empezará a regalarte sus primeras sonrisas sociales — ya no son solo reflejos. También empieza a seguir objetos con los ojos y a hacer sonidos como 'aah' y 'ooh'. Es un momento mágico de conexión.",
-    "normal_symptoms": ["Cólicos (llanto intenso en las tardes)", "Períodos de sueño más largos en la noche", "Mayor alerta durante el día"],
-    "alert_signs": ["No fija la mirada ni sigue objetos", "No reacciona a sonidos fuertes", "Llanto inconsolable por más de 3 horas"],
-    "tip": "Para los cólicos, prueba la posición del avión: pon al bebé boca abajo sobre tu antebrazo y mécelo suavemente."
+    "title": "⭐ Semana 8: La primera sonrisa real",
+    "body": "¡Las primeras sonrisas sociales aparecen alrededor de las 6-8 semanas! Ya no es un reflejo — tu bebé te sonríe porque te reconoce y le generas felicidad. También empieza a vocalizar (arrullos y gorjeos). El cólico suele empezar a mejorar. Es el inicio de la comunicación real.",
+    "normal_symptoms": ["Sonrisas y vocalizaciones", "Mayor interacción visual", "Sueño más organizado (algunos)", "Más fuerza en el cuello"],
+    "alert_signs": ["No sonríe ni vocaliza", "No sigue objetos", "Llanto excesivo sin consuelo", "No gana peso"],
+    "tip": "Habla con tu bebé constantemente — mirándolo a los ojos, describiendo lo que ves, cantando. Cada palabra construye su cerebro.",
+    "milestone": true
   },
   {
     "week": 16,
     "type": "baby",
-    "title": "Semana 16: Explorando con las manos",
-    "body": "A los 4 meses tu bebé agarra objetos con las manos, se ríe a carcajadas y puede sostener la cabeza firme. Le fascina mirarse las manos y llevarse todo a la boca. Su sueño se está regulando — muchos bebés duermen 6-8 horas seguidas de noche.",
-    "normal_symptoms": ["Babeo excesivo (preparación para la dentición)", "Se lleva todo a la boca", "Puede rodar de boca arriba a boca abajo"],
-    "alert_signs": ["No sostiene la cabeza", "No sonríe ni hace sonidos", "No sigue objetos con la mirada"],
-    "tip": "Ofrécele juguetes de diferentes texturas para estimular su desarrollo sensorial. Asegúrate de que sean seguros para morder."
+    "title": "⭐ Semana 16: Explorando con las manos",
+    "body": "Tu bebé de 4 meses descubre sus manos — las mira fascinado, las lleva a la boca, intenta agarrar objetos. El control de la cabeza está casi completo. Puede voltear de boca arriba a boca abajo. Se ríe a carcajadas y reconoce a las personas cercanas. ¡La personalidad emerge!",
+    "normal_symptoms": ["Babeo excesivo (prepara la dentición)", "Todo a la boca", "Movimientos muy activos", "Noches algo alteradas por estirón"],
+    "alert_signs": ["No agarra objetos", "No ríe ni vocaliza", "No controla la cabeza", "No sigue objetos con la mirada"],
+    "tip": "A los 4 meses se aplican vacunas importantes. No las pospas. Es también momento de hablar con el pediatra sobre cuándo iniciar sólidos (alrededor de 6 meses).",
+    "milestone": true
   },
   {
     "week": 26,
     "type": "baby",
-    "title": "Semana 26: Listo para los alimentos",
-    "body": "A los 6 meses es el momento ideal para iniciar la alimentación complementaria, según la OMS. Tu bebé probablemente ya se sienta con apoyo, muestra interés por la comida y ha perdido el reflejo de extrusión. Empieza con purés suaves de una sola fruta o verdura.",
-    "normal_symptoms": ["Interés por la comida de los adultos", "Se sienta con apoyo", "Primeros dientes pueden aparecer"],
-    "alert_signs": ["Rechazo total a todos los alimentos por más de 2 semanas", "Reacciones alérgicas (hinchazón, ronchas, vómito)", "No se sienta con apoyo"],
-    "tip": "Introduce un alimento nuevo cada 3 días para identificar posibles alergias. Empieza con calabaza, zanahoria o banano."
+    "title": "⭐ Semana 26: Listo para los alimentos",
+    "body": "¡6 meses! Hito importante: es el momento recomendado para iniciar la alimentación complementaria. Tu bebé puede sentarse con apoyo, muestra interés en la comida, y ya no tiene el reflejo de extrusión (ya no empuja la comida fuera con la lengua). La leche materna o fórmula sigue siendo la base.",
+    "normal_symptoms": ["Interés en la comida de adultos", "Puede sentarse con apoyo", "Primeros dientes (puede variar mucho)", "Ansiedad de separación inicial"],
+    "alert_signs": ["No se sostiene sentado con apoyo", "No muestra interés en objetos", "No emite sonidos variados", "No reconoce caras conocidas"],
+    "tip": "Baby-led weaning o purés — ambos funcionan. Lo importante es variedad, sin sal ni azúcar añadida, y nunca miel antes del año. Empieza de a poco.",
+    "milestone": true
   },
   {
     "week": 40,
     "type": "baby",
-    "title": "Semana 40: Primeros pasos cerca",
-    "body": "A los 9-10 meses tu bebé probablemente gatea, se para agarrándose de los muebles y dice 'mamá' o 'papá' con intención. Entiende el 'no' y puede señalar objetos. Algunos bebés ya dan sus primeros pasos — pero cada bebé tiene su propio ritmo.",
-    "normal_symptoms": ["Ansiedad por separación", "Gateo activo", "Se para con apoyo", "Dice 1-2 palabras con significado"],
-    "alert_signs": ["No se sienta solo", "No balbucea ni hace sonidos", "No responde a su nombre", "No hace contacto visual"],
-    "tip": "Asegura tu casa para un bebé que se mueve: cubre enchufes, pon seguros en gabinetes y retira objetos pequeños del piso."
+    "title": "⭐ Semana 40: Primeros pasos cerca",
+    "body": "Tu bebé de 9-10 meses está en el umbral de caminar. Puede pararse agarrado de muebles, da pasos laterales (crucero) y quizás suelte las manos unos segundos. Dice 'mamá' y 'papá' con intención. Entiende más de lo que habla. La pinza fina permite agarrar objetos pequeños.",
+    "normal_symptoms": ["Quiere caminar pero aún necesita apoyo", "Muerde durante la lactancia (dentición)", "Ansiedad de separación intensa", "Sueño alterado por hitos motores"],
+    "alert_signs": ["No se para agarrado", "No dice ninguna sílaba doble", "No señala objetos", "No imita acciones"],
+    "tip": "No hay prisa para caminar — el rango normal es de 9 a 15 meses. Deja que explore el suelo libremente, sin zapatos en casa. Los pies descalzos desarrollan mejor el equilibrio.",
+    "milestone": true
   },
   {
     "week": 52,
     "type": "baby",
-    "title": "Semana 52: ¡Feliz primer año!",
-    "body": "¡Tu bebé cumple un año! Probablemente camina con apoyo o solo, dice varias palabras, y entiende instrucciones simples. Ha triplicado su peso de nacimiento. Este es un hito enorme — celebra todo lo que has logrado como mamá.",
-    "normal_symptoms": ["Berrinches ocasionales", "Preferencia por ciertos alimentos", "Sueño de 11-14 horas diarias", "Mayor independencia"],
-    "alert_signs": ["No camina ni se para con apoyo", "No dice ninguna palabra", "No señala objetos", "Pérdida de habilidades que ya tenía"],
-    "tip": "Programa la cita de control del año con tu pediatra. Es momento de revisar el esquema de vacunación y el desarrollo integral."
+    "title": "⭐ Semana 52: ¡Feliz primer año!",
+    "body": "¡Un año! Tu bebé ha triplicado su peso de nacimiento y su cerebro alcanzó el 60% del tamaño adulto. Da sus primeros pasos o está muy cerca. Dice algunas palabras con significado. Señala, imita, juega. Ha sido el año más intenso y transformador de ambas vidas. ¡Lo lograron!",
+    "normal_symptoms": ["Rabietas iniciales (autonomía emergente)", "Selectividad con comida", "Apego intenso a objetos (peluche, chupón)", "Gran actividad motora"],
+    "alert_signs": ["No camina ni se arrastra", "No dice ninguna palabra", "No señala ni imita", "Pérdida de habilidades adquiridas"],
+    "tip": "El primer cumpleaños es también el momento de la revisión del año con el pediatra. Vacunas del año, evaluación del desarrollo, transición a leche entera si no hay lactancia.",
+    "milestone": true
   }
 ]
