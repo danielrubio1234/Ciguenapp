@@ -34,24 +34,24 @@ const features = [
     title: "Respuestas hoy, no en 10 días",
     description:
       "Triaje inteligente que evalúa los síntomas de tu bebé al instante y te dice si necesitas ir a urgencias o si puedes manejar la situación en casa.",
-    color: "text-coral",
-    bg: "bg-coral/10",
+    color: "text-[#E05FA0]",
+    bg: "bg-pink-50",
   },
   {
     icon: Calendar,
     title: "Personalizado para tu semana",
     description:
       "Seguimiento diario adaptado a la semana exacta de tu embarazo o la edad de tu bebé. Información precisa para cada etapa.",
-    color: "text-warm-orange",
-    bg: "bg-warm-orange/10",
+    color: "text-[#7C3AED]",
+    bg: "bg-violet-50",
   },
   {
     icon: Flame,
     title: "Streaks de autocuidado",
     description:
       "Gamificación estilo Duolingo para motivarte a mantener hábitos saludables. Gana rachas, desbloquea logros y cuida de ti y de tu bebé.",
-    color: "text-success",
-    bg: "bg-success/10",
+    color: "text-[#C026D3]",
+    bg: "bg-fuchsia-50",
   },
 ];
 
@@ -101,11 +101,12 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* ─── Hero ─── */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#1A1A2E] to-[#2D1B4E] px-4 py-20 text-center text-white">
+      <section className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#3B1A6E] via-[#6D28D9] to-[#C026D3] px-4 py-20 text-center text-white">
         {/* Decorative circles */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-coral/10 blur-3xl" />
-          <div className="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-warm-orange/8 blur-3xl" />
+          <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-pink-400/20 blur-3xl" />
+          <div className="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-purple-300/20 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 rounded-full bg-fuchsia-400/10 blur-3xl" />
         </div>
 
         <motion.div
@@ -200,7 +201,7 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             className="mb-14 text-center"
           >
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl md:text-4xl">
+            <h2 className="text-2xl font-bold text-navy sm:text-3xl md:text-4xl bg-gradient-to-r from-[#3B1A6E] to-[#E05FA0] bg-clip-text text-transparent">
               Todo lo que necesitas, en un solo lugar
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
@@ -221,11 +222,11 @@ export default function Home() {
                 <Card className="h-full border-none shadow-md transition-shadow hover:shadow-lg">
                   <CardContent className="flex flex-col items-start gap-4 p-6">
                     <div
-                      className={`flex size-12 items-center justify-center rounded-xl ${f.bg}`}
+                      className={`flex size-12 items-center justify-center rounded-2xl ${f.bg}`}
                     >
                       <f.icon className={`size-6 ${f.color}`} />
                     </div>
-                    <h3 className="text-lg font-semibold text-navy">
+                    <h3 className="text-lg font-semibold text-[#3B1A6E]">
                       {f.title}
                     </h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">
@@ -273,13 +274,13 @@ export default function Home() {
                 variants={fadeInUp}
                 className="flex flex-col items-center text-center"
               >
-                <div className="relative mb-5 flex size-16 items-center justify-center rounded-full bg-coral/10">
-                  <step.icon className="size-7 text-coral" />
-                  <span className="absolute -top-1 -right-1 flex size-6 items-center justify-center rounded-full bg-coral text-xs font-bold text-white">
+                <div className="relative mb-5 flex size-16 items-center justify-center rounded-full bg-pink-50">
+                  <step.icon className="size-7 text-[#E05FA0]" />
+                  <span className="absolute -top-1 -right-1 flex size-6 items-center justify-center rounded-full bg-gradient-to-br from-[#E05FA0] to-[#7C3AED] text-xs font-bold text-white">
                     {i + 1}
                   </span>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-navy">
+                <h3 className="mb-2 text-lg font-semibold text-[#3B1A6E]">
                   {step.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
@@ -317,7 +318,7 @@ export default function Home() {
               <motion.div key={t.name} variants={fadeInUp}>
                 <Card className="h-full border-none shadow-md">
                   <CardContent className="flex flex-col gap-4 p-6">
-                    <Quote className="size-6 text-coral/40" />
+                    <Quote className="size-6 text-[#E05FA0]/40" />
                     <p className="text-sm leading-relaxed text-navy/80">
                       {t.text}
                     </p>
@@ -334,7 +335,7 @@ export default function Home() {
                         {Array.from({ length: t.rating }).map((_, idx) => (
                           <Star
                             key={idx}
-                            className="size-4 fill-warm-orange text-warm-orange"
+                            className="size-4 fill-[#C026D3] text-[#C026D3]"
                           />
                         ))}
                       </div>
@@ -363,7 +364,7 @@ export default function Home() {
             <div>
               <p className="text-3xl font-extrabold text-navy sm:text-4xl">
                 4.9
-                <Star className="mb-1 ml-1 inline size-5 fill-warm-orange text-warm-orange" />
+                <Star className="mb-1 ml-1 inline size-5 fill-[#C026D3] text-[#C026D3]" />
               </p>
               <p className="mt-1 text-sm text-muted-foreground">calificación</p>
             </div>
@@ -381,7 +382,7 @@ export default function Home() {
       </section>
 
       {/* ─── CTA Banner ─── */}
-      <section className="bg-gradient-to-r from-[#1A1A2E] to-[#2D1B4E] px-4 py-16 text-center text-white sm:py-20">
+      <section className="bg-gradient-to-r from-[#3B1A6E] via-[#6D28D9] to-[#C026D3] px-4 py-16 text-center text-white sm:py-20">
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -412,7 +413,7 @@ export default function Home() {
       <footer className="border-t border-border bg-white px-4 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <p className="text-xl font-bold text-coral">Cigüeña</p>
+            <p className="text-xl font-bold bg-gradient-to-r from-[#E05FA0] to-[#7C3AED] bg-clip-text text-transparent">Cigüeña</p>
           </div>
           <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <Link href="/terminos" className="hover:text-navy transition-colors">
