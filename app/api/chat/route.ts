@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     chatMessages.push({ role: "user", content: message });
 
     const completion = await openai.chat.completions.create({
-      model: "llama-3.3-70b-instruct",
+      model: "gemini-2.0-flash",
       messages: chatMessages,
       stream: true,
     });
