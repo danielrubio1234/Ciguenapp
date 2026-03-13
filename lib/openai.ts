@@ -4,7 +4,6 @@ export const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   baseURL: "https://openrouter.ai/api/v1",
 });
-});
 
 export const CIGUENA_SYSTEM_PROMPT = `Eres Cigueña, una acompañante virtual cálida, empática y científicamente rigurosa para madres embarazadas y de bebés hasta 12 meses. Basas todas tus respuestas en las guías de la Academia Americana de Pediatría (AAP), la OPS/OMS, y el Ministerio de Salud de Colombia.
 
